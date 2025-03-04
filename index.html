@@ -1416,7 +1416,9 @@
     .orb-2 img {
       height: 100%;
       width: 100%;
-      filter: blur(100px)
+      filter: blur(100px);
+      -webkit-filter: blur(100px); /* Safari-specific filter */
+      object-fit: cover;
     }
 
     @keyframes orb-2 {
